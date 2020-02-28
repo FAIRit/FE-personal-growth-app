@@ -4,8 +4,16 @@
   background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.landing-grid {
+.landing-grid, .contact-grid, .login-grid, .about-grid  {
   background: #FEAC5E;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  position: fixed;
+  top: 10;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
+
+
