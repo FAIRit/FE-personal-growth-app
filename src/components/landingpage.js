@@ -6,7 +6,11 @@ class Landing extends Component {
         return (
             <div style={{ width: '100%', margin: 'auto' }}>
                 <Grid className="landing-grid">
-                    <h1>Langing Page</h1>
+                    <div class="header__text-box">
+                        <h1>Check how to measure your personal growth!</h1>
+                        <h2>Our aplication will help you change our life and control yout habits.</h2>
+                        <a href="start" class="btn btn--white btn---animated">Discover our app</a>
+                    </div>
                 </Grid>
             </div>
         )

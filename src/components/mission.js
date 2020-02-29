@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { Grid } from 'react-mdl';
 
-class Login extends Component {
+class Mission extends Component {
     render() {
         return(
             <div style={{ width: '100%', margin: 'auto' }}>
-                <Grid className="login-grid">
-                    <h1>Login Page</h1>
+                <Grid className="mission-grid">
+                    <h1>Our Mission</h1>
                 </Grid>
             </div>
         )
     }
 }
-export default Login;
+export default Mission;
