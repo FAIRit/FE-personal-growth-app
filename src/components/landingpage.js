@@ -1,6 +1,7 @@
 /*WIP*/
 import React, { Component } from 'react';
 import { Grid } from 'react-mdl';
+
 class Landing extends Component {
     render() {
         return (
