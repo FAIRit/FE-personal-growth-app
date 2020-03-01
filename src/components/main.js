@@ -10,11 +10,10 @@ import StartPage from './start';
 const Main = () => (
   <Switch>
     <Route exact path="/" component={Landing} />
-    <Route path="/start" component={StartPage} />
     <Route path="/mission" component={MissionPage} />
+    <Route path="/start" component={StartPage} />
     <Route path="/contact" component={ContactPage} />
     <Route path="/blog" component={BlogPage} />
   </Switch>
 )
-
 export default Main;
