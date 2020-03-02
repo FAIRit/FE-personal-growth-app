@@ -52,6 +52,9 @@ a {
   font-size: 3rem;
   letter-spacing: 0.4rem;
 }
+.mdl-layout__header-row {
+  padding: 0 0 0 2rem !important;
+}
 
 .landing-grid h1 {
   font-size: 3rem;
