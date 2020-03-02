@@ -27,14 +27,14 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .mdl-layout__drawer {
-    display: none;
+  .mdl-layout__drawer-button {
+    display: none !important;
     font-size: 2rem;
  }
 }
 
 @media screen and (max-width: 1024px) {
-  .mdl-layout__drawer {
+  .mdl-layout__drawer-button {
     font-size: 1rem !important;
     color: #fff !important;
     margin: 1rem !important;
