@@ -4,11 +4,10 @@ import { Layout, Content } from 'react-mdl';
 import Main from './components/main';
 import HeaderLanding from './components/header';
 import fire from './config/fire';
-import Home from "./components/home";
-import Login from "./components/login";
+import Home from './components/home';
+import Login from './components/login';
 
 class App extends Component {
-
 /* firebase */
   constructor() {
     super();
