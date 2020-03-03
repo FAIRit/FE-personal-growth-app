@@ -28,7 +28,7 @@ class HeaderBase extends Component {
 class HeaderLanding extends Component {
     render() {
         let headerToShow;
-        if (window.location.pathname==='/start') {
+        if (window.location.pathname==='/start' || window.location.pathname==='/login' ) {
             headerToShow = null;
         } else {
             headerToShow = <HeaderBase/>

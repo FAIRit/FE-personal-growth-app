@@ -96,13 +96,7 @@ a {
 .btn--white::after {
   background-color: #fff;
 }
-.btn--purple {
-  background-color: #fff;
-  color: #fff;
-}
-.btn--purple::after {
-  background-color: #fff;
-}
+
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, );
