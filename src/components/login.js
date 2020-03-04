@@ -1,6 +1,5 @@
 import React, { Component} from 'react';
 import fire from '../config/fire';
-import {Redirect} from 'react-router-dom';
 
 class Login extends Component {
   constructor(props) {
@@ -23,7 +22,7 @@ class Login extends Component {
     e.preventDefault();
     fire.auth()
         .signInWithEmailAndPassword(this.state.email, this.state.password)
-        .then(()=>{ return <Redirect to="/home" />})
+        .then(()=>{ return this.props.history.push("/home") })
         .catch(
             error => {console.log(error);}
         );
@@ -32,14 +31,13 @@ class Login extends Component {
   signup(e){
     e.preventDefault();
     fire.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{
-    }).then((u)=>{console.log(u)})
+    }).then(()=>{ return this.props.history.push("/home") })
     .catch((error) => {
         console.log(error);
       })
   }
   render() {
     return (
-       (this.state.isLogin ? <div>MMMM</div> : (<div className="col-md-6">
         <form>
             <div className="form-group">
             <label htmlFor="exampleInputEmail1">Email address</label>
@@ -53,7 +51,6 @@ class Login extends Component {
             <button type="submit" onClick={this.login} className="btn btn-primary">Login</button>
             <button onClick={this.signup} style={{marginLeft: '25px'}} className="btn btn-success">Signup</button>
         </form>
-    </div>))
     );
   }
 }

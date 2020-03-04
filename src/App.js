@@ -9,8 +9,8 @@ import Login from './components/login';
 
 class App extends Component {
 /* firebase */
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = ({
       user: null,
     });
@@ -39,20 +39,15 @@ class App extends Component {
     <Fragment>
       <div className="demo-big-content">
         <Layout>
-            <HeaderLanding/>
+          <HeaderLanding/>
             <Content>
                 <div className="page-content" />
                 <Main/>
-            </Content>
+                <div className="App">
+                  {this.state.user ? (<Home />) : (<Login />)}
+                </div>
+            </Content>     
         </Layout>
-      </div>
-      <div className="App">
-        {this.state.user ? (
-          <Home />
-        ) :
-          (
-            <Login />
-          )}
       </div>
     </Fragment>
     );
