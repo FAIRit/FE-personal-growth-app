@@ -4,8 +4,6 @@ import { Layout, Content } from 'react-mdl';
 import Main from './components/main';
 import HeaderLanding from './components/header';
 import fire from './config/fire';
-import Home from './components/home';
-import Login from './components/login';
 
 class App extends Component {
 /* firebase */
@@ -43,9 +41,6 @@ class App extends Component {
             <Content>
                 <div className="page-content" />
                 <Main/>
-                <div className="App">
-                  {this.state.user ? (<Home />) : (<Login />)}
-                </div>
             </Content>     
         </Layout>
       </div>

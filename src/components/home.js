@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import fire from '../config/fire';
-import {Redirect} from 'react-router-dom';
 
 class Home extends Component {
     constructor(props) {
