@@ -29,8 +29,9 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function SignIn() {
+export default function SignIn(props) {
   const classes = useStyles();
+  console.log(props)
 
   return (
     <Container component="main" maxWidth="xs">
@@ -53,8 +54,10 @@ export default function SignIn() {
             name="email"
             autoComplete="email"
             autoFocus
-            //value={this.state.email}
-          />
+            onChange={ 
+                val => { props.handleEmail({ target: val }) } 
+            }
+            />
           <TextField
             variant="outlined"
             margin="normal"
@@ -65,16 +68,18 @@ export default function SignIn() {
             type="password"
             id="password"
             autoComplete="current-password"
-            //value={this.state.password}
-          />
+            onChange={ 
+                val => { props.handleEmail } 
+            }
+        />
 
           <Button
             type="submit"
             fullWidth
+            onClick={props.handleLogin}
             variant="contained"
             color="primary"
             className={classes.submit}
-            //onClick={this.login}
           >
             Login
           </Button>
@@ -85,7 +90,7 @@ export default function SignIn() {
             variant="contained"
             color="secondary"
             className={classes.submit}
-            //onClick={this.signup}
+            onClick={props.handleSignup}
           >
             Sign Up
           </Button>

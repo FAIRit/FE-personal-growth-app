@@ -16,7 +16,8 @@ class Login extends Component {
     };
   }
 
-  handleChange(e) {
+  handleChange(e, data) {
+    console.log(e, data)
     this.setState({ [e.target.name]: e.target.value });
   }
 
@@ -55,7 +56,12 @@ class Login extends Component {
         //     <button onClick={this.signup} style={{marginLeft: '25px'}} className="btn btn-success">Signup</button>
         // </form>
         <Grid className="login-grid">
-          <SignIn />
+          <SignIn
+            handleLogin={this.login}
+            handleEmail={this.handleChange}
+            // handlePassword={this.state.password}
+            handleSignup={this.signup}
+          />
         </Grid>
     );
   }
