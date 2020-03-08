@@ -17,7 +17,6 @@ class Login extends Component {
   }
 
   handleChange(e, data) {
-    console.log(e, data)
     this.setState({ [e.target.name]: e.target.value });
   }
 
@@ -26,8 +25,7 @@ class Login extends Component {
     fire.auth()
         .signInWithEmailAndPassword(this.state.email.trim(), this.state.password)
         .then(()=>{ return this.props.history.push("/home") })
-        .catch(
-            error => {console.log(error);}
+        .catch(error => {console.log(error);}
         );
   }
 
@@ -35,9 +33,7 @@ class Login extends Component {
     e.preventDefault();
     fire.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{
     }).then(()=>{ return this.props.history.push("/home") })
-    .catch((error) => {
-        console.log(error);
-      })
+    .catch((error) => { console.log(error);})
   }
   
   render() {
@@ -59,7 +55,7 @@ class Login extends Component {
           <SignIn
             handleLogin={this.login}
             handleEmail={this.handleChange}
-            handlePassword={this.state.password}
+            handlePassword={this.handleChange}
             handleSignup={this.signup}
           />
         </Grid>
