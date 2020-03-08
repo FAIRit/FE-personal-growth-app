@@ -24,7 +24,7 @@ class Login extends Component {
   login(e) {
     e.preventDefault();
     fire.auth()
-        .signInWithEmailAndPassword(this.state.email, this.state.password)
+        .signInWithEmailAndPassword(this.state.email.trim(), this.state.password)
         .then(()=>{ return this.props.history.push("/home") })
         .catch(
             error => {console.log(error);}
@@ -59,7 +59,7 @@ class Login extends Component {
           <SignIn
             handleLogin={this.login}
             handleEmail={this.handleChange}
-            // handlePassword={this.state.password}
+            handlePassword={this.state.password}
             handleSignup={this.signup}
           />
         </Grid>

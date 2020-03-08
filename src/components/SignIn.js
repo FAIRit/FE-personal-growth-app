@@ -55,7 +55,7 @@ export default function SignIn(props) {
             autoComplete="email"
             autoFocus
             onChange={ 
-                val => { props.handleEmail({ target: val }) } 
+                val => {props.handleEmail} 
             }
             />
           <TextField
@@ -69,7 +69,7 @@ export default function SignIn(props) {
             id="password"
             autoComplete="current-password"
             onChange={ 
-                val => { props.handleEmail } 
+                val => { props.handlePassword } 
             }
         />
 
