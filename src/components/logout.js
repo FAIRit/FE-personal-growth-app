@@ -1,12 +1,11 @@
 import React, { Component} from 'react';
 import fire from '../config/fire';
 import { withRouter } from 'react-router-dom';
+import MenuItem from '@material-ui/core/MenuItem';
 
 class Logout extends Component {
     constructor(props) {
-        console.log('konstruktor1',props)
         super(props);
-        console.log('konstruktor',props)
         this.logout = this.logout.bind(this);
     }
     logout(e) {
@@ -21,7 +20,7 @@ class Logout extends Component {
 
     render() {
         return (
-            <button onClick={this.logout}>Logout</button>
+            <MenuItem onClick={this.logout}>Logout</MenuItem>
         );
     }
 }

@@ -89,9 +89,7 @@ export default function PrimarySearchAppBar(props) {
       onClose={handleMenuClose}
     >
       <MenuItem onClick={handleMenuClose}>My account</MenuItem>
-      <MenuItem>
-            <Logout />
-      </MenuItem>
+      <Logout />
     </Menu>
   );
 
