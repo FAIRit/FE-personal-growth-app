@@ -13,6 +13,9 @@ class Landing extends Component {
                         <a href="login" className="btn btn--white btn---animated">Discover our app</a>
                     </div>
                 </Grid>
+                <footer id="footer">
+                    <p>COPYRIGHT © 2020 Elizabeth Szulc</p>
+                </footer>
             </div>
         )
     }

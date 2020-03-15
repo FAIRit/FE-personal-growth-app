@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
-import fire from '../config/fire';
+import fire from '../firebase/firebase';
 import SignIn from './SignIn.js'
 import { Grid } from 'react-mdl';
 

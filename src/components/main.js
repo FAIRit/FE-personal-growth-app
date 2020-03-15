@@ -6,7 +6,7 @@ import BlogPage from './blog';
 import MissionPage from './mission';
 import ContactPage from './contact';
 import LoginPage from './login';
-import HomePage from './home';
+import HomePage from '../layouts/home';
 
 const Main = () => (
   <Switch>

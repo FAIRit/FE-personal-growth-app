@@ -3,7 +3,7 @@ import './App.css';
 import { Layout, Content } from 'react-mdl';
 import Main from './components/main';
 import HeaderLanding from './components/header';
-import fire from './config/fire';
+import fire from './firebase/firebase';
 
 class App extends Component {
 /* firebase */
