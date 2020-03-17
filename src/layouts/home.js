@@ -13,6 +13,8 @@ import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import Logout from './logout.js'
+import { Navigation, Drawer } from 'react-mdl';
+import { Link } from 'react-router-dom';
 
 const useStyles = makeStyles(theme => ({
   grow: {
@@ -149,6 +151,11 @@ export default function PrimarySearchAppBar(props) {
           <Typography className={classes.title} variant="h6" noWrap>
             Dashboard
           </Typography>
+          <Navigation title={<Link style={{textDecoration: 'none', color: 'white' }} to="/">lol</Link>} scroll>
+                  <Link to="/mygoals">My Goals</Link>
+                  <Link to="/summary">Summary</Link>
+                  <Link to="/community">Community</Link>
+          </Navigation>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
             <IconButton aria-label="show 4 new mails" color="inherit">
@@ -161,7 +168,7 @@ export default function PrimarySearchAppBar(props) {
                 <NotificationsIcon />
               </Badge>
             </IconButton>
-            <IconButton
+            {/* <IconButton 
               edge="end"
               aria-label="account of current user"
               aria-controls={menuId}
@@ -170,7 +177,7 @@ export default function PrimarySearchAppBar(props) {
               color="inherit"
             >
               <AccountCircle />
-            </IconButton>
+            </IconButton> */}
           </div>
           <div className={classes.sectionMobile}>
             <IconButton
