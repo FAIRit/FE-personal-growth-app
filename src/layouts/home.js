@@ -137,6 +137,7 @@ export default function PrimarySearchAppBar(props) {
   );
 
   return (
+    <div className="homeMenu">
     <div className={classes.grow}>
       <AppBar position="static">
         <Toolbar>
@@ -148,14 +149,14 @@ export default function PrimarySearchAppBar(props) {
           >
             <MenuIcon />
           </IconButton>
-          <Typography className={classes.title} variant="h6" noWrap>
-            Dashboard
-          </Typography>
+          <div className="homeNavigation">
           <Navigation title={<Link style={{textDecoration: 'none', color: 'white' }} to="/">lol</Link>} scroll>
-                  <Link to="/mygoals">My Goals</Link>
-                  <Link to="/summary">Summary</Link>
-                  <Link to="/community">Community</Link>
+            <Link to="/home">Dashboard</Link>
+            <Link to="/mygoals">My Goals</Link>
+            <Link to="/summary">Summary</Link>
+            <Link to="/community">Community</Link>
           </Navigation>
+          </div>
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
             <IconButton aria-label="show 4 new mails" color="inherit">
@@ -168,7 +169,7 @@ export default function PrimarySearchAppBar(props) {
                 <NotificationsIcon />
               </Badge>
             </IconButton>
-            {/* <IconButton 
+            <IconButton 
               edge="end"
               aria-label="account of current user"
               aria-controls={menuId}
@@ -177,7 +178,7 @@ export default function PrimarySearchAppBar(props) {
               color="inherit"
             >
               <AccountCircle />
-            </IconButton> */}
+            </IconButton>
           </div>
           <div className={classes.sectionMobile}>
             <IconButton
@@ -194,6 +195,7 @@ export default function PrimarySearchAppBar(props) {
       </AppBar>
       {renderMobileMenu}
       {renderMenu}
+    </div>
     </div>
   );
 }
