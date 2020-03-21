@@ -4,7 +4,6 @@ import { Layout, Content } from 'react-mdl';
 import Main from './components/main';
 import HeaderLanding from './components/header';
 import fire from './firebase/firebase';
-
 class App extends Component {
 /* firebase */
   constructor(props) {
@@ -38,10 +37,10 @@ class App extends Component {
       <div className="demo-big-content">
         <Layout>
           <HeaderLanding/>
-            <Content>
-                <div className="page-content" />
-                <Main/>
-            </Content>     
+          <Content>
+              <div className="page-content" />
+              <Main/>
+          </Content>     
         </Layout>
       </div>
     </Fragment>

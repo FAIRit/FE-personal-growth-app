@@ -30,6 +30,7 @@ class HeaderLanding extends Component {
         let headerToShow;
         if (window.location.pathname==='/start' || window.location.pathname==='/login' || window.location.pathname==='/home' ) {
             headerToShow = null;
+
         } else {
             headerToShow = <HeaderBase/>
         }

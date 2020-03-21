@@ -3,7 +3,6 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
 import Badge from '@material-ui/core/Badge';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
@@ -13,8 +12,9 @@ import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 import Logout from './logout.js'
-import { Navigation, Drawer } from 'react-mdl';
+import { Navigation } from 'react-mdl';
 import { Link } from 'react-router-dom';
+
 
 const useStyles = makeStyles(theme => ({
   grow: {
@@ -135,7 +135,6 @@ export default function PrimarySearchAppBar(props) {
       </MenuItem>
     </Menu>
   );
-
   return (
     <div className="homeMenu">
     <div className={classes.grow}>
@@ -154,7 +153,6 @@ export default function PrimarySearchAppBar(props) {
             <Link to="/home">Dashboard</Link>
             <Link to="/mygoals">My Goals</Link>
             <Link to="/summary">Summary</Link>
-            <Link to="/community">Community</Link>
           </Navigation>
           </div>
           <div className={classes.grow} />

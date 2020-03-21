@@ -8,7 +8,6 @@ import ContactPage from './contact';
 import LoginPage from './login';
 import HomePage from '../layouts/home';
 import SummaryPage from './summary';
-import CommunityPage from './community';
 import GoalsPage from './mygoals';
 
 const Main = () => (
@@ -20,7 +19,6 @@ const Main = () => (
     <Route path="/blog" component={BlogPage} />
     <Route path="/home" component={HomePage} />
     <Route path="/summary" component={SummaryPage} />
-    <Route path="/community" component={CommunityPage} />
     <Route path="/mygoals" component={GoalsPage} />
   </Switch>
 )
