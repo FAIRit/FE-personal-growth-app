@@ -63,8 +63,8 @@ a {
   font-family: 'Sawarabi Mincho', sans-serif;
   display: inline-block;
   position: relative;
-  margin-top: 10rem;
-  margin-bottom: 5rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
   color:rgb(255, 255, 255);
 }
 
@@ -215,4 +215,8 @@ h1 {
 
 .homeMenu .MuiIconButton-colorInherit {
   padding: 0 2.4rem;
+}
+
+.MuiTypography-h5{
+  color: #0000 !important;
 }
