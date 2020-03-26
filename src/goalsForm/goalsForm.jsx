@@ -12,17 +12,13 @@ class GoalForm extends Component{
         this.writeGoal = this.writeGoal.bind(this);
     }
 
-    // When the user input changes, set the newNoteContent
-    // to the value of what's in the input box.
     handleUserInput(e){
         this.setState({
-            newGoalContent: e.target.value, // the value of the text input
+            newGoalContent: e.target.value,
         })
     }
 
     writeGoal(){
-        // call a method that sets the noteContent for a note to
-        // the value of the input
         this.props.addGoal(this.state.newGoalContent);
 
         // Set newNoteContent back to an empty string.
@@ -39,7 +35,7 @@ class GoalForm extends Component{
                 value={this.state.newGoalContent} 
                 onChange={this.handleUserInput} />
                 <button className="goalButton"
-                onClick={this.writeGoal}>Add Goal</button>
+                onClick={this.writeGoal}>+</button>
             </div>
         )
     }

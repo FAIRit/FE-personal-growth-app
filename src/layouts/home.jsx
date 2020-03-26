@@ -11,7 +11,7 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
-import Logout from './logout.js'
+import Logout from './logout.jsx'
 import { Navigation } from 'react-mdl';
 import { Link } from 'react-router-dom';
 

@@ -233,14 +233,13 @@ h1 {
   flex: 1 1 5%;
   min-height: 2.5em;
   max-height: 2em;
-  font-size: 3.2em;
-  color: #F4B350;
-  font-family: 'Permanent Marker', cursive;
+  font-size: 2.2em;
+  color: #fff;
   text-align: center;
   align-content: center;
-  padding:20px 0px 20px 0px;
+  padding: 5rem 0rem 4rem 0rem;
+  letter-spacing: .2rem;
   margin-bottom: 6px;
-  background-color: rgba(0,0,0,0.5);
   text-shadow: 3px 3px 10px #000;
   display: block;
 }
@@ -248,7 +247,6 @@ h1 {
 .goalsBody {
   padding-top: 24px;
   display: flex;
-  flex: 1 1 85%;
   flex-wrap: wrap;
   align-items: flex-start;
   align-content: flex-start;
@@ -257,8 +255,6 @@ h1 {
 
 .goalsFooter {
   display: flex;
-  flex: 1 1 5%;
-  background-color: rgba(0,0,0,0.5);
 }
 
 .MuiTypography-root.MuiTypography-h5 {

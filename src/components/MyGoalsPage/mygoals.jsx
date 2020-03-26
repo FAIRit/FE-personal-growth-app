@@ -1,8 +1,8 @@
 import React, { Component, Fragment } from 'react';
 import Goals from '../../goals/goals';
-import { Grid } from 'react-mdl';
 import GoalsForm from '../../goalsForm/goalsForm';
 import fire from '../../firebase/firebase';
+import PrimarySearchAppBar from '../../layouts/home.jsx'
 
 class MyGoals extends Component {
 
@@ -59,9 +59,8 @@ class MyGoals extends Component {
 
   render() {
     return (
-    <Fragment>
-        <div style={{ width: '100%', margin: 'auto' }}>
-        <Grid className="mygoals-grid">
+      <Fragment>
+        <PrimarySearchAppBar />
         <div className="goalsWrapper">
             <div className="goalsHeader">
             <div className="heading">My Goals List for time :</div>
@@ -82,9 +81,7 @@ class MyGoals extends Component {
             <GoalsForm addGoal={this.addGoal} />
             </div>
         </div>
-        </Grid>
-        </div>
-    </Fragment>
+      </Fragment>
     );
   }
 }
