@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
-import fire from '../firebase/firebase';
-import SignIn from './SignIn.js'
+import fire from '../../firebase/firebase';
+import SignIn from '../SigninPage/SignIn.js'
 import { Grid } from 'react-mdl';
 
 class Login extends Component {

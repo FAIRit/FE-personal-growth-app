@@ -1,14 +1,14 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import Landing from './landingpage';
-import BlogPage from './blog';
-import MissionPage from './mission';
-import ContactPage from './contact';
-import LoginPage from './login';
-import HomePage from '../layouts/home';
-import SummaryPage from './summary';
-import GoalsPage from './mygoals';
+import Landing from '../Landing/landingpage';
+import BlogPage from '../Blog/blog';
+import MissionPage from '../MissionPage/mission';
+import ContactPage from '../Contact/contact';
+import LoginPage from '../Login/login';
+import HomePage from '../../layouts/home';
+import SummaryPage from '../SummaryPage/summary';
+import GoalsPage from '../MyGoalsPage/mygoals';
 
 const Main = () => (
   <Switch>

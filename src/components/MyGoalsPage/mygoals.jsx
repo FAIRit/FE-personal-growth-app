@@ -1,8 +1,8 @@
 import React, { Component, Fragment } from 'react';
-import Goals from '../goals/goals';
+import Goals from '../../goals/goals';
 import { Grid } from 'react-mdl';
-import GoalsForm from '../goalsForm/goalsForm';
-import fire from '../firebase/firebase';
+import GoalsForm from '../../goalsForm/goalsForm';
+import fire from '../../firebase/firebase';
 
 class MyGoals extends Component {
 
