@@ -63,7 +63,7 @@ class MyGoals extends Component {
         <PrimarySearchAppBar />
         <div className="goalsWrapper">
             <div className="goalsHeader">
-            <div className="heading">My Goals List for time :</div>
+            <div className="heading">My Goals List :</div>
             </div>
             <div className="goalsBody">
             {

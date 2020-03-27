@@ -22,7 +22,7 @@ class Goal extends Component{
                       onClick={() => this.handleRemoveGoal(this.goalId)}>
                       &times;
                 </span>
-                <p className="goalContent">{ this.goalContent }</p>
+                <p className="goalContent">{ this.goal }</p>
             </div>
         )
     }

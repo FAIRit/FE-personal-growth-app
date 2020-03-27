@@ -246,6 +246,7 @@ h1 {
 
 .goalsBody {
   padding-top: 24px;
+  padding-bottom: 1rem;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
