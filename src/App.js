@@ -21,9 +21,13 @@ class App extends Component {
   authListener() {
     fire.auth().onAuthStateChanged((user) => {
       console.log(user);
+      console.log(this.state);
       if (user) {
         this.setState({ user });
+
         localStorage.setItem('user', user.uid);
+        
+
       } else {
         this.setState({ user: null });
         localStorage.removeItem('user');
@@ -32,6 +36,7 @@ class App extends Component {
   }
 
   render() {
+    console.log('Misio', this.state.user);
     return (
     <Fragment>
       <div className="demo-big-content">
@@ -39,7 +44,7 @@ class App extends Component {
           <HeaderLanding/>
           <Content>
               <div className="page-content" />
-              <Main/>
+              <Main auth={localStorage.user !== undefined}/>
           </Content>     
         </Layout>
       </div>

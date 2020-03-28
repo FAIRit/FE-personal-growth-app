@@ -30,14 +30,14 @@ class Login extends Component {
   }
 
   redirect(e) {
-    var user = fire.auth().currentUser;
+    let user = fire.auth().currentUser;
     if (user) {
       return this.props.history.push("/home") }
     else {
       return this.props.history.push("/login")
-    }
+    };
   }
-  
+
   signup(e){
     e.preventDefault();
     fire.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{

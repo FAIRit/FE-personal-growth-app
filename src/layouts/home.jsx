@@ -14,6 +14,7 @@ import MoreIcon from '@material-ui/icons/MoreVert';
 import Logout from './logout.jsx'
 import { Navigation } from 'react-mdl';
 import { Link } from 'react-router-dom';
+import fire from '../firebase/firebase';
 
 
 const useStyles = makeStyles(theme => ({
@@ -53,8 +54,15 @@ const useStyles = makeStyles(theme => ({
     },
   },
 }));
-
 export default function PrimarySearchAppBar(props) {
+
+  // fire.auth().onAuthStateChanged(user => {
+  //   if(user) {
+  //     window.location = 'home'; //After successful login, user will be redirected to home.html
+  //   }
+  // });
+  
+
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
@@ -136,6 +144,7 @@ export default function PrimarySearchAppBar(props) {
     </Menu>
   );
   return (
+
     <div className="homeMenu">
     <div className={classes.grow}>
       <AppBar position="static">
