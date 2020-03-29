@@ -8,6 +8,7 @@ class MyGoals extends Component {
 
   constructor(props){
     super(props);
+    let user = fire.auth().currentUser;
     this.addGoal = this.addGoal.bind(this);
     this.removeGoal = this.removeGoal.bind(this);
 
@@ -27,6 +28,7 @@ class MyGoals extends Component {
     this.database.on('child_added', snap => {
       previousGoals.push({
         id: snap.key,
+        userId: snap.val().userId,
         goalContent: snap.val().goalContent,
       })
 
@@ -48,8 +50,9 @@ class MyGoals extends Component {
     })
   }
 
+
   addGoal(goal){
-    this.database.push().set({ goalContent: goal});
+    this.database.push().set({ goalContent: goal, userId: fire.auth().currentUser.uid });
   }
 
   removeGoal(goalId){
@@ -68,12 +71,17 @@ class MyGoals extends Component {
             <div className="goalsBody">
             {
                 this.state.goals.map((goal) => {
-                return (
-                    <Goals goalContent={goal.goalContent} 
-                    goalId={goal.id} 
-                    key={goal.id} 
-                    removeGoal ={this.removeGoal}/>
-                )
+                if (goal.userId == fire.auth().currentUser.uid) {
+                  return (
+                      <Goals goalContent={goal.goalContent} 
+                      goalId={goal.id} 
+                      key={goal.id} 
+                      userId={fire.auth().currentUser.uid}
+                      removeGoal ={this.removeGoal}/>
+                  )} 
+                else { 
+                  return null
+                  }
                 })
             }
             </div>

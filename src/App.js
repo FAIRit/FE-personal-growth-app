@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import './App.css';
 import { Layout, Content } from 'react-mdl';
-import Main from './components/Home/main';
+import Main from './components/Route/route';
 import HeaderLanding from './components/Header/header';
 import fire from './firebase/firebase';
 class App extends Component {

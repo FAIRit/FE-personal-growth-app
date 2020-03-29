@@ -32,7 +32,7 @@ class Login extends Component {
   redirect(e) {
     let user = fire.auth().currentUser;
     if (user) {
-      return this.props.history.push("/home") }
+      return this.props.history.push("/home?authed=ok") }
     else {
       return this.props.history.push("/login")
     };
