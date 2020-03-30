@@ -1,8 +1,8 @@
 import React, { Component, Fragment } from 'react';
-import Goals from '../../goals/goals';
-import GoalsForm from '../../goalsForm/goalsForm';
+import Goals from '../Goals/goals';
+import GoalsForm from '../GoalsForm/goalsForm';
 import fire from '../../firebase/firebase';
-import PrimarySearchAppBar from '../../layouts/home.jsx'
+import PrimarySearchAppBar from '../HomePage/home.jsx'
 
 class MyGoals extends Component {
 

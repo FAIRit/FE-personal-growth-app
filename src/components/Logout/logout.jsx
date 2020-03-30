@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
-import fire from '../firebase/firebase';
+import fire from '../../firebase/firebase';
 import { withRouter } from 'react-router-dom';
 import MenuItem from '@material-ui/core/MenuItem';
 

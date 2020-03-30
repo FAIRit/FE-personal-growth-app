@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './goals.css';
-import PropTypes from 'prop-types';
 
 class Goal extends Component{
 
@@ -26,10 +25,6 @@ class Goal extends Component{
             </div>
         )
     }
-}
-
-Goal.propTypes = {
-    goalContent: PropTypes.string
 }
 
 export default Goal;

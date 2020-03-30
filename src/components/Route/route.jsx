@@ -6,7 +6,7 @@ import BlogPage from '../Blog/blog';
 import MissionPage from '../MissionPage/mission';
 import ContactPage from '../Contact/contact';
 import LoginPage from '../Login/login';
-import PrimarySearchAppBar from '../../layouts/home';
+import PrimarySearchAppBar from '../HomePage/home';
 import SummaryPage from '../SummaryPage/summary';
 import GoalsPage from '../MyGoalsPage/mygoals';
 

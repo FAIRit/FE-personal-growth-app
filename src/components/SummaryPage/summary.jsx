@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import { Grid } from 'react-mdl';
-import PrimarySearchAppBar from '../../layouts/home.jsx'
+import PrimarySearchAppBar from '../HomePage/home.jsx'
 
 class Summary extends Component {
     render() {
