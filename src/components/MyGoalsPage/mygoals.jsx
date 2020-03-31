@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import Goals from '../Goals/goals';
 import GoalsForm from '../GoalsForm/goalsForm';
 import fire from '../../firebase/firebase';
-import PrimarySearchAppBar from '../HomePage/home.jsx'
+import HomePage from '../HomePage/home.jsx'
 
 class MyGoals extends Component {
 
@@ -63,7 +63,7 @@ class MyGoals extends Component {
   render() {
     return (
       <Fragment>
-        <PrimarySearchAppBar />
+        <HomePage />
         <div className="goalsWrapper">
             <div className="goalsHeader">
             <div className="heading">My Goals List :</div>
