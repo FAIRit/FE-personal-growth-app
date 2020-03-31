@@ -14,7 +14,7 @@ class Landing extends Component {
                     </div>
                 </Grid>
                 <footer id="footer">
-                    <p>COPYRIGHT © 2020 Elizabeth Szulc</p>
+                    <p>COPYRIGHT © 2020 Ela Szulc</p>
                 </footer>
             </div>
         )

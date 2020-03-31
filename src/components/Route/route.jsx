@@ -6,9 +6,8 @@ import BlogPage from '../Blog/blog';
 import MissionPage from '../MissionPage/mission';
 import ContactPage from '../Contact/contact';
 import LoginPage from '../Login/login';
-import PrimarySearchAppBar from '../HomePage/home';
-import SummaryPage from '../SummaryPage/summary';
-import GoalsPage from '../MyGoalsPage/mygoals';
+import GoalsPage from '../MyGoals/mygoals';
+import Dashboard from '../Dashboard/dashboardPage';
 
 
 
@@ -30,8 +29,7 @@ const Main = (props) => (
     <Route path="/login" component={LoginPage} />
     <Route path="/contact" component={ContactPage} />
     <Route path="/blog" component={BlogPage} />
-    <PrivateRoute authed={props.auth} path='/home' component={PrimarySearchAppBar} />
-    <Route path="/summary" component={SummaryPage} />
+    <PrivateRoute authed={props.auth} path='/home' component={Dashboard} />
     <Route path="/mygoals" component={GoalsPage} />
   </Switch>
 )
