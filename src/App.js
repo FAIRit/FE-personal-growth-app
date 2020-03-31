@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react';
 import './App.css';
 import { Layout, Content } from 'react-mdl';
 import Main from './components/Route/route';
-import HeaderLanding from './components/Header/header';
+import HeaderLanding from './components/HeaderLanding/header';
 import fire from './firebase/firebase';
 class App extends Component {
 /* firebase */
@@ -36,7 +36,6 @@ class App extends Component {
   }
 
   render() {
-    console.log('Misio', this.state.user);
     return (
     <Fragment>
       <div className="demo-big-content">

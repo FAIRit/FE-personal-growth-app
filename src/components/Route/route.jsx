@@ -6,7 +6,7 @@ import BlogPage from '../Blog/blog';
 import MissionPage from '../MissionPage/mission';
 import ContactPage from '../Contact/contact';
 import LoginPage from '../Login/login';
-import PrimarySearchAppBar from '../HomePage/home';
+import HomePage from '../HomePage/home';
 import SummaryPage from '../SummaryPage/summary';
 import GoalsPage from '../MyGoalsPage/mygoals';
 
@@ -30,7 +30,8 @@ const Main = (props) => (
     <Route path="/login" component={LoginPage} />
     <Route path="/contact" component={ContactPage} />
     <Route path="/blog" component={BlogPage} />
-    <PrivateRoute authed={props.auth} path='/home' component={PrimarySearchAppBar} />
+    <Route path="/home" component={HomePage} />
+    {/* <PrivateRoute authed={props.auth} path='/home' component={HomePage} /> */}
     <Route path="/summary" component={SummaryPage} />
     <Route path="/mygoals" component={GoalsPage} />
   </Switch>
