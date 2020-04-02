@@ -263,3 +263,14 @@ h1 {
 .dashboard-grid {
  padding: 10rem;
 }
+
+.mission-grid h1, .contact-grid h1 {
+  font-size: 2.3rem;
+  padding: 2rem;
+  font-family: 'Sawarabi Mincho', sans-serif;
+  display: inline-block;
+  position: relative;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color:rgb(255, 255, 255);
+}
