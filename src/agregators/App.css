@@ -10,6 +10,7 @@
   background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   text-align: center;
   position: fixed;
+  display: inline-block !important;
   top: 10;
   left: 0;
   width: 100%;
@@ -293,10 +294,6 @@ a {
   color:rgb(255, 255, 255);
 }
 
-.mdl-grid {
-  display: inline-block !important;
-}
-
 .btn-text:link, .btn-text:visited {
   font-size: 1.8rem;
   color: #fff;
@@ -316,3 +313,4 @@ a {
   box-shadow: 0 0.5rem 1rem rgba(15, 15, 15, 0.15);
   transform: translateY(0);
 }
+
