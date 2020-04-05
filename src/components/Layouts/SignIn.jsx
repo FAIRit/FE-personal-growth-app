@@ -6,6 +6,7 @@ import Box from '@material-ui/core/Box';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import {Grid, Cell} from 'react-mdl';
 
 const useStyles = makeStyles(theme => ({
   paper: {
@@ -88,7 +89,6 @@ export default function SignIn(props) {
       </div>
       <Box mt={8}>
       </Box>
-      <img src="./img/happy.jpg" alt="image-signin" className="image-signin"></img>
     </Container>
   );
 }
