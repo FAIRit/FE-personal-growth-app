@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react';
 import Goals from '../Goals/goals';
 import GoalsForm from '../GoalsForm/goalsForm';
 import fire from '../../firebase/firebase';
+import CheckboxesTags from '../Category/category';
 
 class MyGoals extends Component {
 

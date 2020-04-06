@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './goals.css';
+import CheckboxesTags from '../Category/category';
 
 class Goal extends Component{
 
@@ -22,6 +23,7 @@ class Goal extends Component{
                       &times;
                 </span>
                 <p className="goalContent">{ this.goal }</p>
+                <CheckboxesTags />
             </div>
         )
     }
