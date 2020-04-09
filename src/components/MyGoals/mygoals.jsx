@@ -3,6 +3,7 @@ import Goals from '../Goals/goals';
 import GoalsForm from '../GoalsForm/goalsForm';
 import fire from '../../firebase/firebase';
 import CheckboxesTags from '../Category/category';
+import SpringModal from '../Modal/modal';
 
 class MyGoals extends Component {
 
@@ -15,7 +16,6 @@ class MyGoals extends Component {
     this.app = fire;
     this.database = this.app.database().ref().child('goals');
 
-    // We're going to setup the React state of our component
     this.state = {
       goals: [],
     }
@@ -24,12 +24,12 @@ class MyGoals extends Component {
   componentWillMount(){
     const previousGoals = this.state.goals;
 
-    // DataSnapshot
     this.database.on('child_added', snap => {
       previousGoals.push({
         id: snap.key,
         userId: snap.val().userId,
         goalContent: snap.val().goalContent,
+        goalCategory: snap.val().goalCategory,
       })
 
       this.setState({
@@ -52,11 +52,14 @@ class MyGoals extends Component {
 
 
   addGoal(goal){
-    this.database.push().set({ goalContent: goal, userId: fire.auth().currentUser.uid });
+    this.database.push().set({ 
+      goalContent: goal, 
+      userId: fire.auth().currentUser.uid,
+      goalCategory: 'Sport',
+    });
   }
 
   removeGoal(goalId){
-    console.log("from the parent: " + goalId);
     this.database.child(goalId).remove();
   }
 
@@ -65,7 +68,9 @@ class MyGoals extends Component {
       <Fragment>
         <div className="goalsWrapper">
             <div className="goalsHeader">
+            <SpringModal />
             <div className="heading">My Goals List :</div>
+            
             </div>
             <div className="goalsBody">
             {
