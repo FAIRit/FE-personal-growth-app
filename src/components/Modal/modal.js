@@ -65,7 +65,7 @@ export default function SpringModal() {
   return (
     <div>
       <button type="button" onClick={handleOpen}>
-        react-spring
+        +
       </button>
       <Modal
         aria-labelledby="spring-modal-title"
@@ -81,8 +81,8 @@ export default function SpringModal() {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            <h2 id="spring-modal-title">Spring modal</h2>
-            <p id="spring-modal-description">react-spring animates me.</p>
+            <h2 id="spring-modal-title">Add goal</h2>
+            <p id="spring-modal-description">Desription : </p><br /><br />
           </div>
         </Fade>
       </Modal>

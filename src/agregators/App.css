@@ -4,7 +4,7 @@
   background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.contact-grid, .blog-grid, .mission-grid  {
+.landing-grid, .contact-grid, .blog-grid, .mission-grid  {
   background: #FEAC5E;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -57,7 +57,7 @@ a {
   padding: 0 0 0 3rem !important;
 }
 
-/* .landing-grid h1 {
+.landing-grid h1 {
   font-size: 3rem;
   padding: 4rem;
   text-align: center;
@@ -67,7 +67,7 @@ a {
   margin-top: 4rem;
   margin-bottom: 2rem;
   color:rgb(255, 255, 255);
-} */
+}
 
 .landing-grid h2 {
   font-size: 2rem;
