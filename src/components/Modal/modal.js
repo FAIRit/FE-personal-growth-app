@@ -4,6 +4,10 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import { useSpring, animated } from 'react-spring/web.cjs';
+import GoalsForm from '../GoalsForm/goalsForm';
+import CheckboxesTags from '../Category/category';
+import GitHubLabel from '../Labels/labels';
+
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -81,8 +85,17 @@ export default function SpringModal() {
       >
         <Fade in={open}>
           <div className={classes.paper}>
-            <h2 id="spring-modal-title">Add goal</h2>
-            <p id="spring-modal-description">Desription : </p><br /><br />
+            <h1 id="spring-modal-title">Add new goal</h1><br /><br />
+            <h4 id="spring-modal-description">Category : </h4><br />
+            <div className="categoryList">
+              <CheckboxesTags />
+            </div>
+            <h4 id="spring-modal-description">Priority : </h4><br />
+            <div className="piorityList">
+            <GitHubLabel /><br />
+            </div>
+            <h4 id="spring-modal-description">Description : </h4><br />
+            <GoalsForm />
           </div>
         </Fade>
       </Modal>

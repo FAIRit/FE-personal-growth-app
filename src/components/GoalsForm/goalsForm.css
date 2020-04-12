@@ -4,10 +4,10 @@
 
 .goalButton{
     border: none;
-    margin-left: 3rem;
+    margin-top: 5rem;
     border-radius: 10rem;
-    padding: .1rem 1rem;
-    font-size: 1.9rem;
+    padding: .4rem 2rem;
+    font-size: 1.5rem;
     font-family: 'Droid Sans', sans-serif;
     background-color: #019875;
     color: #fff;
@@ -22,14 +22,13 @@
 }
 
 .goalInput{
-    width: 800px;
-    min-width: 800px;
+    width: 35rem;
     border-radius: 5px;
     box-shadow: none;
     border: 1px solid #ced6e0;
     transition: all 0.3s ease-in-out;
     font-size: 1.5rem;
-    padding: 5px 15px;
+    padding: 0.5rem;
     background: none;
     color: #1a3b5d;
     font-family: "Source Sans Pro", sans-serif;
@@ -39,4 +38,8 @@
     background-color: #E4F1FE;
     color: #111;
     transition: 0.2s ease-in;
+}
+
+.makeStyles-paper-77 {
+    text-align: center;
 }

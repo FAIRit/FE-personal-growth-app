@@ -312,3 +312,13 @@ a {
   box-shadow: 0 0.5rem 1rem rgba(15, 15, 15, 0.15);
   transform: translateY(0);
 }
+
+.categoryList {
+  display: inline-block;
+  padding-bottom: 3rem;
+}
+
+.piorityList {
+  display: inline-block;
+  padding-bottom: 3rem;
+}

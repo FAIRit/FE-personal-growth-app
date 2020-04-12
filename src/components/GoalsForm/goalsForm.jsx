@@ -33,9 +33,9 @@ class GoalForm extends Component{
                 <input className="goalInput"
                 placeholder="Write a new goal..."
                 value={this.state.newGoalContent} 
-                onChange={this.handleUserInput} />
+                onChange={this.handleUserInput} /><br />
                 <button className="goalButton"
-                onClick={this.writeGoal}>+</button>
+                onClick={this.writeGoal}>Submit</button>
             </div>
         )
     }

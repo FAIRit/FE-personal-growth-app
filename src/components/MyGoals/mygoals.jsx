@@ -90,7 +90,7 @@ class MyGoals extends Component {
             }
             </div>
             <div className="goalsFooter">
-            <GoalsForm addGoal={this.addGoal} />
+            {/* <GoalsForm addGoal={this.addGoal} /> */}
             </div>
         </div>
       </Grid>
