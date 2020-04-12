@@ -2,8 +2,8 @@ import React, { Component, Fragment } from 'react';
 import Goals from '../Goals/goals';
 import GoalsForm from '../GoalsForm/goalsForm';
 import fire from '../../firebase/firebase';
-import CheckboxesTags from '../Category/category';
 import SpringModal from '../Modal/modal';
+import { Grid } from 'react-mdl';
 
 class MyGoals extends Component {
 
@@ -65,7 +65,7 @@ class MyGoals extends Component {
 
   render() {
     return (
-      <Fragment>
+      <Grid className="home-grid">
         <div className="goalsWrapper">
             <div className="goalsHeader">
             <SpringModal />
@@ -93,7 +93,7 @@ class MyGoals extends Component {
             <GoalsForm addGoal={this.addGoal} />
             </div>
         </div>
-      </Fragment>
+      </Grid>
     );
   }
 }
