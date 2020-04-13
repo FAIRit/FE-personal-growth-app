@@ -1,6 +1,6 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import Goals from '../Goals/goals';
-import GoalsForm from '../GoalsForm/goalsForm';
+//import GoalsForm from '../GoalsForm/goalsForm';
 import fire from '../../firebase/firebase';
 import SpringModal from '../Modal/modal';
 import { Grid } from 'react-mdl';
@@ -68,14 +68,13 @@ class MyGoals extends Component {
       <Grid className="home-grid">
         <div className="goalsWrapper">
             <div className="goalsHeader">
-            <SpringModal />
-            <div className="heading">My Goals List :</div>
-            
+            <div className="heading">My Goals List :</div><br />
+            <SpringModal postGoal={this.addGoal}/>
             </div>
             <div className="goalsBody">
             {
                 this.state.goals.map((goal) => {
-                if (goal.userId == fire.auth().currentUser.uid) {
+                if (goal.userId === fire.auth().currentUser.uid) {
                   return (
                       <Goals goalContent={goal.goalContent} 
                       goalId={goal.id} 

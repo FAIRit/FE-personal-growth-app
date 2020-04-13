@@ -6,7 +6,6 @@ import Backdrop from '@material-ui/core/Backdrop';
 import { useSpring, animated } from 'react-spring/web.cjs';
 import GoalsForm from '../GoalsForm/goalsForm';
 import CheckboxesTags from '../Category/category';
-import GitHubLabel from '../Labels/labels';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -54,7 +53,7 @@ Fade.propTypes = {
   onExited: PropTypes.func,
 };
 
-export default function SpringModal() {
+export default function SpringModal(props) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
@@ -90,12 +89,8 @@ export default function SpringModal() {
             <div className="categoryList">
               <CheckboxesTags />
             </div>
-            <h4 id="spring-modal-description">Priority : </h4><br />
-            <div className="piorityList">
-            <GitHubLabel /><br />
-            </div>
             <h4 id="spring-modal-description">Description : </h4><br />
-            <GoalsForm />
+            <GoalsForm handleClose={handleClose} postGoal={props.postGoal}/>
           </div>
         </Fade>
       </Modal>

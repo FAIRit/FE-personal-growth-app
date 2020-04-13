@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Grid } from 'react-mdl';
+import './blog.css';
 
 class Blog extends Component {
     render() {

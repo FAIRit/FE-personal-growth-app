@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Grid } from 'react-mdl';
+import './mission.css';
 
 class Mission extends Component {
     render() {

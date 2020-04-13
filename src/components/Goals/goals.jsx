@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './goals.css';
 import CheckboxesTags from '../Category/category';
-import GitHubLabel from '../Labels/labels';
 
 class Goal extends Component{
 
@@ -25,7 +24,6 @@ class Goal extends Component{
                 </span>
                 <p className="goalContent">{ this.goal }</p>
                 <CheckboxesTags />
-                <GitHubLabel />
             </div>
         )
     }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Grid } from 'react-mdl';
+import './contact.css';
 
 class Contact extends Component {
     render() {
