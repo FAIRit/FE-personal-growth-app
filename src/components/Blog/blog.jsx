@@ -8,7 +8,7 @@ class Blog extends Component {
             <div style={{ width: '100%', margin: 'auto' }}>
                 <Grid className="blog-grid">
                     <h1>Blog Page</h1><br />
-                    <h3>How to work witch our procrastination?</h3>
+                    <h3>How to work on our procrastination?</h3>
                     <h4>There are several techniques that will help you in the fight against your procrastination. 
                     You have already heard about many of them.
                     The Personal Growth App was created to help you fight yourself.</h4>

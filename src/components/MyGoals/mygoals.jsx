@@ -4,6 +4,7 @@ import Goals from '../Goals/goals';
 import fire from '../../firebase/firebase';
 import SpringModal from '../Modal/modal';
 import { Grid } from 'react-mdl';
+import './mygoals.css';
 
 class MyGoals extends Component {
 

@@ -2,6 +2,7 @@ import React, { Component} from 'react';
 import fire from '../../firebase/firebase';
 import SignIn from '../Layouts/SignIn.jsx'
 import { Grid } from 'react-mdl';
+import './login.css';
 
 class Login extends Component {
   constructor(props) {

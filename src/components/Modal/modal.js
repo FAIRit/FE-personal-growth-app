@@ -6,7 +6,7 @@ import Backdrop from '@material-ui/core/Backdrop';
 import { useSpring, animated } from 'react-spring/web.cjs';
 import GoalsForm from '../GoalsForm/goalsForm';
 import CheckboxesTags from '../Category/category';
-
+import './modal.css';
 
 const useStyles = makeStyles((theme) => ({
   modal: {

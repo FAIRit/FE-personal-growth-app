@@ -10,3 +10,25 @@
     width: 100%;
     height: 100%;
   }
+
+.mission-grid h1 {
+    font-size: 2.6rem;
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    display: inline-block;
+    position: relative;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    color:rgb(255, 255, 255);
+  }
+
+  .mission-grid h3 {
+    font-size: 2rem;
+    padding: 3rem;
+    font-family: 'Sawarabi Mincho', sans-serif;
+    display: inline-block;
+    position: relative;
+    margin-top: 2rem;
+    color:rgb(255, 255, 255);
+  }
