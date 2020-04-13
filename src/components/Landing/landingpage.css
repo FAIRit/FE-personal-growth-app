@@ -13,7 +13,7 @@
 
 #footer {
     position: absolute;
-    bottom: 6rem;
+    bottom: 0;
     width: 100%;
     height: 1.5rem;
     flex-shrink: 0;
@@ -40,6 +40,12 @@
     color:rgb(255, 255, 255);
 }
 
+@media screen and (max-width: 624px) {
+    .landing-grid h1 {
+        font-size: 2rem;
+    }
+}
+
 a {
     font-family: 'Odibee Sans', sans-serif ;
     font-size: 3rem;
@@ -55,6 +61,12 @@ a {
     display: inline-block;
     position: relative;
     color:rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 624px) {
+    .landing-grid h2 {
+        font-size: 1rem;
+    }
 }
 
 .btn, .btn:link, .btn:visited {
@@ -107,6 +119,15 @@ a {
     animation: moveInBottom 0.5s ease-out 0.75s;
     animation-fill-mode: backwards;
 }
+
+@media screen and (max-width: 524px) {
+    .btn, .btn:link, .btn:visited, .btn--white, .btn--white::after, .btn:active, .btn:focus, .btn--animated {
+        font-size: 1rem;
+        padding: .5rem 1rem;
+        margin-top: 0rem;
+    }
+}
+
 
 @media screen and (min-width: 1024px) {
 .mdl-layout__drawer-button {

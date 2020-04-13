@@ -23,6 +23,12 @@
     color:rgb(255, 255, 255);
   }
 
+@media screen and (max-width: 624px) {
+    .blog-grid h1 {
+        font-size: 2rem;
+    }
+}
+
 .blog-grid h3 {
     font-size: 2rem;
     padding: 3rem;
@@ -33,6 +39,12 @@
     color:rgb(255, 255, 255);
   }
 
+@media screen and (max-width: 624px) {
+    .blog-grid h3 {
+        font-size: 1.2rem;
+    }
+}
+  
 .blog-grid h4 {
     font-size: 1.7rem;
     padding-top: 0.2rem;
@@ -44,6 +56,12 @@
     margin-bottom: 2rem;
     color:rgb(255, 255, 255);
   }
+
+@media screen and (max-width: 624px) {
+    .blog-grid h4 {
+        font-size: 0.9rem;
+    }
+}
   
   .btn-text:link, .btn-text:visited {
     font-size: 1.8rem;
@@ -54,6 +72,13 @@
     margin-top: 10px;
     transition: all 0.2s;
   }
+
+@media screen and (max-width: 624px) {
+    .btn-text:link, .btn-text:visited {
+        font-size: 0.9rem;
+        margin-top: 0px;
+    }
+}
 
   .btn-text:hover {
     background-color: #FEAC5E;
