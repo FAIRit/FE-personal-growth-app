@@ -1,16 +1,13 @@
-import * as firebase from "firebase";
+import firebase from 'firebase';
 
-const firebaseConfig = {
-  apiKey: process.env.apiKey,
-  authDomain: process.env.authDomain,
-  databaseURL: process.env.databaseURL,
-  projectId: process.env.projectId,
-  storageBucket: process.env.storageBucket,
-  messagingSenderId: process.env.messagingSenderId,
-  appId: process.env.appId,
-};
-
+ const firebaseConfig = {
+    apiKey: "AIzaSyAG_PdK75FfF8S8eUA7rgRx-RURrGWDAfo",
+    authDomain: "personal-growth-app.firebaseapp.com",
+    databaseURL: "https://personal-growth-app.firebaseio.com",
+    projectId: "personal-growth-app",
+    storageBucket: "personal-growth-app.appspot.com",
+    messagingSenderId: "458731510450",
+    appId: "1:458731510450:web:d9a0631eb9d225968c07ab"
+  };
 const fire = firebase.initializeApp(firebaseConfig);
-const FirebaseAuth = (provider) => firebase.auth().signInWithPopup(provider);
-const database = firebase.database().ref();
 export default fire;

@@ -6,6 +6,7 @@
 button {
   border-radius: 10rem !important;
   font-size: 2rem !important;
+  background-color: #fff;
 }
 
 @media screen and (max-width: 624px) {

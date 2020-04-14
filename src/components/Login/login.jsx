@@ -1,8 +1,8 @@
-import React, { Component} from 'react';
-import fire from '../../firebase/firebase';
-import SignIn from '../Layouts/SignIn.jsx'
-import { Grid } from 'react-mdl';
-import './login.css';
+import React, { Component } from "react";
+import fire from "../../firebase/firebase";
+import SignIn from "../Layouts/SignIn.jsx";
+import { Grid } from "react-mdl";
+import "./login.css";
 
 class Login extends Component {
   constructor(props) {
@@ -12,8 +12,8 @@ class Login extends Component {
     this.signup = this.signup.bind(this);
     this.state = {
       isLogin: true,
-      email: '',
-      password: ''
+      email: "",
+      password: "",
     };
   }
 
@@ -23,39 +23,50 @@ class Login extends Component {
 
   login(e) {
     e.preventDefault();
-    fire.auth()
-        .signInWithEmailAndPassword(this.state.email.trim(), this.state.password)
-        .then(()=>{ return this.props.history.push("/home") })
-        .catch(error => {alert(error)}
-        );
+    fire
+      .auth()
+      .signInWithEmailAndPassword(this.state.email.trim(), this.state.password)
+      .then(() => {
+        return this.props.history.push("/home");
+      })
+      .catch((error) => {
+        alert(error);
+      });
   }
 
   redirect(e) {
     let user = fire.auth().currentUser;
     if (user) {
-      return this.props.history.push("/home?authed=ok") }
-    else {
-      return this.props.history.push("/login")
-    };
+      return this.props.history.push("/home?authed=ok");
+    } else {
+      return this.props.history.push("/login");
+    }
   }
 
-  signup(e){
+  signup(e) {
     e.preventDefault();
-    fire.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then((u)=>{
-    }).then(()=>{ return this.props.history.push("/home") })
-    .catch((error) => {alert(error)})
+    fire
+      .auth()
+      .createUserWithEmailAndPassword(this.state.email, this.state.password)
+      .then((u) => {})
+      .then(() => {
+        return this.props.history.push("/home");
+      })
+      .catch((error) => {
+        alert(error);
+      });
   }
-  
+
   render() {
     return (
-        <Grid className="login-grid">
-          <SignIn
-            handleLogin={this.login}
-            handleEmail={this.handleChange}
-            handlePassword={this.handleChange}
-            handleSignup={this.signup}
-          />
-        </Grid>
+      <Grid className="login-grid">
+        <SignIn
+          handleLogin={this.login}
+          handleEmail={this.handleChange}
+          handlePassword={this.handleChange}
+          handleSignup={this.signup}
+        />
+      </Grid>
     );
   }
 }
