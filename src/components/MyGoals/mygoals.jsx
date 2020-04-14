@@ -88,7 +88,7 @@ class MyGoals extends Component {
       <Grid className="home-grid">
         <div className="goalsWrapper">
             <div className="goalsHeader">
-            <div className="heading">My Goals List :</div><br />
+            <div className="heading">My Goals List :</div><br/>
             <SpringModal 
               postGoal={this.addGoal} 
               // newGoalCategoryHandler={this.newGoalCategoryHandler}

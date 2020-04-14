@@ -43,3 +43,25 @@
 .makeStyles-paper-77 {
     text-align: center;
 }
+
+@media screen and (max-width: 624px) {
+    .makeStyles-paper-77 {
+        font-size: 1rem;
+        margin-top: 1rem;
+        padding: .5rem;
+        margin-bottom: .1rem;
+    }
+}
+@media screen and (max-width: 624px) {
+    .goalInput {
+        width: 15rem;
+    }
+}
+
+
+@media screen and (max-width: 624px) {
+    .goalButton {
+        font-size: 1.5rem !important;
+        margin-top: 1rem;
+    }
+}

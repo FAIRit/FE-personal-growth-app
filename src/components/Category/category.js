@@ -15,7 +15,7 @@ export default function CheckboxesTags() {
     <Autocomplete
       multiple
       id="checkboxes-tags-demo"
-      options={top100Films}
+      options={categories}
       disableCloseOnSelect
       getOptionLabel={(option) => option.title}
       renderOption={(option, { selected }) => (
@@ -36,13 +36,14 @@ export default function CheckboxesTags() {
     />
   );
 }
-const top100Films = [
+const categories = [
   { title: 'Sport' },
   { title: 'Food' },
   { title: 'Lifestyle' },
-  { title: 'The Dark Knight' },
+  { title: 'Relations' },
   { title: 'Learning' },
   { title: 'Health' },
   { title: 'Religion'},
-  { title: 'Work' }
+  { title: 'Work' },
+  { title: 'Different' },
 ];

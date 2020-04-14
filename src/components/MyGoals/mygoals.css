@@ -14,22 +14,28 @@
     color: #fff;
     text-align: center;
     align-content: center;
-    padding: 5rem 0rem 4rem 0rem;
+    padding: 2rem 0rem 15rem 0rem;
     letter-spacing: .2rem;
-    margin-bottom: 6px;
     text-shadow: 3px 3px 10px #000;
     display: block;
     font-family: 'Sawarabi Mincho', sans-serif;
 }
+
+@media screen and (max-width: 624px) {
+  .goalsHeader {
+      font-size: 2rem;
+      margin-top: 1rem;
+      padding: 1rem 0rem 11rem 0rem;
+  }
+}
   
 .goalsBody {
-    padding-top: 24px;
-    padding-bottom: 1rem;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
     align-content: flex-start;
     overflow: auto;
+    margin-bottom: 3rem;
 }
   
   .goalsFooter {
@@ -41,7 +47,7 @@
     padding: 10rem;
   }
 
-  .MuiInputBase-fullWidth {
-    width: 20rem !important;
-    float: center !important;
+  @media screen and (max-width: 624px) {
+    .MuiInputBase-fullWidth {
+    }
   }
