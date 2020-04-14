@@ -1,67 +1,66 @@
-.formWrapper{
-    margin: auto;
+.formWrapper {
+  margin: auto;
 }
 
-.goalButton{
-    border: none;
-    margin-top: 5rem;
-    border-radius: 10rem;
-    padding: .4rem 2rem;
-    font-size: 1.5rem;
-    font-family: 'Droid Sans', sans-serif;
-    background-color: #019875;
-    color: #fff;
-    transition: 0.2s ease-out;
-    text-align: center;
+.goalButton {
+  border: none;
+  margin-top: 5rem;
+  border-radius: 10rem;
+  padding: 0.4rem 2rem;
+  font-size: 1.5rem;
+  font-family: "Droid Sans", sans-serif;
+  background-color: #019875;
+  color: #fff;
+  transition: 0.2s ease-out;
+  text-align: center;
 }
 
-.goalButton:hover{
-    background-color: #02BA85;
-    color: #fff;
-    transition: 0.2s ease-out;
+.goalButton:hover {
+  background-color: #02ba85;
+  color: #fff;
+  transition: 0.2s ease-out;
 }
 
-.goalInput{
-    width: 35rem;
-    border-radius: 5px;
-    box-shadow: none;
-    border: 1px solid #ced6e0;
-    transition: all 0.3s ease-in-out;
-    font-size: 1.5rem;
-    padding: 0.5rem;
-    background: none;
-    color: #1a3b5d;
-    font-family: "Source Sans Pro", sans-serif;
+.goalInput {
+  width: 35rem;
+  border-radius: 5px;
+  box-shadow: none;
+  border: 1px solid #ced6e0;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  background: none;
+  color: #1a3b5d;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-.goalInput:focus{
-    background-color: #E4F1FE;
-    color: #111;
-    transition: 0.2s ease-in;
+.goalInput:focus {
+  background-color: #e4f1fe;
+  color: #111;
+  transition: 0.2s ease-in;
 }
 
 .makeStyles-paper-77 {
-    text-align: center;
+  text-align: center;
 }
 
 @media screen and (max-width: 624px) {
-    .makeStyles-paper-77 {
-        font-size: 1rem;
-        margin-top: 1rem;
-        padding: .5rem;
-        margin-bottom: .1rem;
-    }
+  .makeStyles-paper-77 {
+    font-size: 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 0.1rem;
+  }
 }
 @media screen and (max-width: 624px) {
-    .goalInput {
-        width: 15rem;
-    }
+  .goalInput {
+    width: 15rem;
+  }
 }
 
-
 @media screen and (max-width: 624px) {
-    .goalButton {
-        font-size: 1.5rem !important;
-        margin-top: 1rem;
-    }
+  .goalButton {
+    font-size: 1.5rem !important;
+    margin-top: 1rem;
+  }
 }

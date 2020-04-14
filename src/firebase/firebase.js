@@ -1,13 +1,16 @@
-import firebase from 'firebase';
+import * as firebase from "firebase";
 
- const firebaseConfig = {
-    apiKey: "apiKey",
-    authDomain: "authDomain",
-    databaseURL: "databaseURL",
-    projectId: "projectId",
-    storageBucket: "storageBucket",
-    messagingSenderId: "messagingSenderId",
-    appId: "appId"
-  };
+const firebaseConfig = {
+  apiKey: process.env.apiKey,
+  authDomain: process.env.authDomain,
+  databaseURL: process.env.databaseURL,
+  projectId: process.env.projectId,
+  storageBucket: process.env.storageBucket,
+  messagingSenderId: process.env.messagingSenderId,
+  appId: process.env.appId,
+};
+
 const fire = firebase.initializeApp(firebaseConfig);
+const FirebaseAuth = (provider) => firebase.auth().signInWithPopup(provider);
+const database = firebase.database().ref();
 export default fire;

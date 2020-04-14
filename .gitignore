@@ -9,3 +9,6 @@ build/
 
 # webpack
 config/
+
+# Env variables
+.env

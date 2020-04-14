@@ -1,15 +1,15 @@
 .categoryList {
-    display: inline-block;
-    padding-bottom: 3rem;
-  }
-  
+  display: inline-block;
+  padding-bottom: 3rem;
+}
+
 button {
   border-radius: 10rem !important;
   font-size: 2rem !important;
 }
 
 @media screen and (max-width: 624px) {
-    button {
-      font-size: 1.5rem !important;
+  button {
+    font-size: 1.5rem !important;
   }
 }

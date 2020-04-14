@@ -1,50 +1,60 @@
 .contact-grid {
-    background: #FEAC5E;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    text-align: center;
-    position: fixed;
-    display: inline-block !important;
-    top: 10;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  background: #feac5e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #4bc0c8,
+    #c779d0,
+    #feac5e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #4bc0c8,
+    #c779d0,
+    #feac5e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  position: fixed;
+  display: inline-block !important;
+  top: 10;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .contact-grid h1 {
-    font-size: 2.6rem;
-    padding: 2rem;
-    text-align: center;
-    font-family: 'Sawarabi Mincho', sans-serif;
-    display: inline-block;
-    position: relative;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-    color:rgb(255, 255, 255);
-  }
+  font-size: 2.6rem;
+  padding: 2rem;
+  text-align: center;
+  font-family: "Sawarabi Mincho", sans-serif;
+  display: inline-block;
+  position: relative;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  color: rgb(255, 255, 255);
+}
 
-  @media screen and (max-width: 624px) {
-    .contact-grid h1 {
-        font-size: 2rem;
-        padding: 1rem;
-        margin-top: 6rem;
-    }
+@media screen and (max-width: 624px) {
+  .contact-grid h1 {
+    font-size: 2rem;
+    padding: 1rem;
+    margin-top: 6rem;
+  }
 }
 
 .contact-grid h3 {
-    font-size: 2rem;
-    padding: 3rem;
-    font-family: 'Sawarabi Mincho', sans-serif;
-    display: inline-block;
-    position: relative;
-    margin-top: 2rem;
-    color:rgb(255, 255, 255);
-  }
+  font-size: 2rem;
+  padding: 3rem;
+  font-family: "Sawarabi Mincho", sans-serif;
+  display: inline-block;
+  position: relative;
+  margin-top: 2rem;
+  color: rgb(255, 255, 255);
+}
 
-  @media screen and (max-width: 624px) {
-    .contact-grid h3 {
-        font-size: 1.2rem;
-        padding: 1rem;
-        margin-top: 1rem;
-    }
+@media screen and (max-width: 624px) {
+  .contact-grid h3 {
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
 }
