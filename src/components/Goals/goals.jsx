@@ -22,7 +22,7 @@ class Goal extends Component{
                       onClick={() => this.handleRemoveGoal(this.goalId)}>
                       &times;
                 </span>
-                <p className="goalContent">{ this.goal }</p>
+                <p className="goalContent">{this.goal}</p>
                 <CheckboxesTags />
             </div>
         )

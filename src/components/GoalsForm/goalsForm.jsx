@@ -16,10 +16,14 @@ class GoalForm extends Component{
         this.setState({
             newGoalContent: e.target.value,
         })
+        console.log('input',e.target.value);
+        
     }
     
 
+
     writeGoal(){
+        // this.props.newGoalDescription(this.state.newGoalContent);
         this.props.postGoal(this.state.newGoalContent);
 
         // Set newNoteContent back to an empty string.

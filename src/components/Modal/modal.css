@@ -3,3 +3,7 @@
     padding-bottom: 3rem;
   }
   
+button {
+  border-radius: 10rem !important;
+  font-size: 2rem !important;
+}

@@ -19,7 +19,14 @@ class MyGoals extends Component {
 
     this.state = {
       goals: [],
+      // goal: {
+      //   description: null,
+      //   category: null,
+      // }
     }
+
+    // this.newGoalCategoryHandler = this.newGoalCategoryHandler.bind(this);
+
   }
 
   componentWillMount(){
@@ -30,7 +37,7 @@ class MyGoals extends Component {
         id: snap.key,
         userId: snap.val().userId,
         goalContent: snap.val().goalContent,
-        goalCategory: snap.val().goalCategory,
+        // goalCategory: snap.val().goalCategory,
       })
 
       this.setState({
@@ -56,7 +63,7 @@ class MyGoals extends Component {
     this.database.push().set({ 
       goalContent: goal, 
       userId: fire.auth().currentUser.uid,
-      goalCategory: 'Sport',
+      // goalCategory: 'Sport',
     });
   }
 
@@ -64,13 +71,29 @@ class MyGoals extends Component {
     this.database.child(goalId).remove();
   }
 
+  // newGoalCategoryHandler = (text) => {
+
+    
+  // }
+
+  // newGoalDescriptionHandler = (text) => {
+  //   console.log('text',text);
+  //   this.setState({
+  //     description: text
+  //   })
+  // }
+
   render() {
     return (
       <Grid className="home-grid">
         <div className="goalsWrapper">
             <div className="goalsHeader">
             <div className="heading">My Goals List :</div><br />
-            <SpringModal postGoal={this.addGoal}/>
+            <SpringModal 
+              postGoal={this.addGoal} 
+              // newGoalCategoryHandler={this.newGoalCategoryHandler}
+              newGoalDescriptionHandler={this.newGoalDescriptionHandler}
+              />
             </div>
             <div className="goalsBody">
             {
@@ -81,7 +104,8 @@ class MyGoals extends Component {
                       goalId={goal.id} 
                       key={goal.id} 
                       userId={fire.auth().currentUser.uid}
-                      removeGoal ={this.removeGoal}/>
+                      removeGoal ={this.removeGoal}
+                      />
                   )} 
                 else { 
                   return null

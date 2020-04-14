@@ -19,6 +19,7 @@
     margin-bottom: 6px;
     text-shadow: 3px 3px 10px #000;
     display: block;
+    font-family: 'Sawarabi Mincho', sans-serif;
 }
   
 .goalsBody {
@@ -35,3 +36,12 @@
     display: flex;
   }
   
+  .mdl-grid {
+    display: inline !important;
+    padding: 10rem;
+  }
+
+  .MuiInputBase-fullWidth {
+    width: 20rem !important;
+    float: center !important;
+  }
