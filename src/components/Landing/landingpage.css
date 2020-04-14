@@ -43,6 +43,9 @@
 @media screen and (max-width: 624px) {
     .landing-grid h1 {
         font-size: 2rem;
+        margin-top: 6rem;
+        padding: 1rem;
+        margin-bottom: .3rem;
     }
 }
 
@@ -66,6 +69,8 @@ a {
 @media screen and (max-width: 624px) {
     .landing-grid h2 {
         font-size: 1rem;
+        padding: 1.2rem;
+        margin-top: 1rem;
     }
 }
 

@@ -22,6 +22,15 @@
     margin-bottom: 2rem;
     color:rgb(255, 255, 255);
   }
+
+  @media screen and (max-width: 624px) {
+    .contact-grid h1 {
+        font-size: 2rem;
+        padding: 1rem;
+        margin-top: 6rem;
+    }
+}
+
 .contact-grid h3 {
     font-size: 2rem;
     padding: 3rem;
@@ -31,3 +40,11 @@
     margin-top: 2rem;
     color:rgb(255, 255, 255);
   }
+
+  @media screen and (max-width: 624px) {
+    .contact-grid h3 {
+        font-size: 1.2rem;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+}

@@ -23,6 +23,15 @@
     color:rgb(255, 255, 255);
   }
 
+  @media screen and (max-width: 624px) {
+    .mission-grid h1 {
+        font-size: 2rem;
+        margin-top: 6rem;
+        padding: 1rem;
+        margin-bottom: .3rem;
+    }
+}
+
   .mission-grid h3 {
     font-size: 2rem;
     padding: 3rem;
@@ -32,3 +41,11 @@
     margin-top: 2rem;
     color:rgb(255, 255, 255);
   }
+
+  @media screen and (max-width: 624px) {
+    .mission-grid h3 {
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+}

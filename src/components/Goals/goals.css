@@ -14,7 +14,7 @@
   }
   
   @keyframes fadeIn { from { opacity:0; } to { opacity:0.8; } }
-  @keyframes fadeOut { from { opactiy:0.8; } to { opacity:0; } }
+  @keyframes fadeOut { from { opacity:0.8; } to { opacity:0; } }
   
   .fade-in {
       opacity:0;

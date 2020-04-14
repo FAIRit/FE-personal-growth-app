@@ -26,6 +26,9 @@
 @media screen and (max-width: 624px) {
     .blog-grid h1 {
         font-size: 2rem;
+        margin-bottom: 0.2rem;
+        padding: 1rem;
+        margin-top: 6rem;
     }
 }
 
@@ -41,7 +44,9 @@
 
 @media screen and (max-width: 624px) {
     .blog-grid h3 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
+        padding: 1rem;
+        margin-top: 1rem;
     }
 }
   
@@ -59,7 +64,7 @@
 
 @media screen and (max-width: 624px) {
     .blog-grid h4 {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
     }
 }
   
@@ -75,8 +80,7 @@
 
 @media screen and (max-width: 624px) {
     .btn-text:link, .btn-text:visited {
-        font-size: 0.9rem;
-        margin-top: 0px;
+        font-size: 1.3rem;
     }
 }
 
