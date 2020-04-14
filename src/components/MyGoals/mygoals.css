@@ -46,8 +46,3 @@
     display: inline !important;
     padding: 10rem;
   }
-
-  @media screen and (max-width: 624px) {
-    .MuiInputBase-fullWidth {
-    }
-  }
