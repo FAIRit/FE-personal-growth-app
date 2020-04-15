@@ -55,3 +55,9 @@
 .closebtn:hover {
   color: #ac2500;
 }
+
+@media screen and (max-width: 824px) {
+    .goalsBody .MuiFormControl-fullWidth{
+        width: 15rem;
+    }
+}

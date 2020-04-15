@@ -14,7 +14,7 @@
   color: #fff;
   text-align: center;
   align-content: center;
-  padding: 2rem 0rem 15rem 0rem;
+  padding-top: 1rem;
   letter-spacing: 0.2rem;
   text-shadow: 3px 3px 10px #000;
   display: block;
@@ -25,7 +25,7 @@
   .goalsHeader {
     font-size: 2rem;
     margin-top: 1rem;
-    padding: 1rem 0rem 11rem 0rem;
+    padding-top: .5rem;
   }
 }
 
@@ -35,7 +35,14 @@
   align-items: flex-start;
   align-content: flex-start;
   overflow: auto;
+  margin-top: 10rem;
   margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 624px) {
+  .goalsBody {
+    margin-top: 6rem;
+  }
 }
 
 .goalsFooter {
@@ -44,5 +51,4 @@
 
 .mdl-grid {
   display: inline !important;
-  padding: 10rem;
 }
