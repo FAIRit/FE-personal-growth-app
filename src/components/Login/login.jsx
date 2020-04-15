@@ -48,7 +48,7 @@ class Login extends Component {
     fire
       .auth()
       .createUserWithEmailAndPassword(this.state.email, this.state.password)
-      .then((u) => {})
+      // .then((u) => {})
       .then(() => {
         return this.props.history.push("/home");
       })
