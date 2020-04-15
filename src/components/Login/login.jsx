@@ -25,8 +25,9 @@ class Login extends Component {
     e.preventDefault();
     fire
       .auth()
-      .signInWithEmailAndPassword(this.state.email.trim(), this.state.password)
+      .signInWithEmailAndPassword(this.state.email, this.state.password)
       .then(() => {
+        console.log('poszlo logowanie')
         return this.props.history.push("/home");
       })
       .catch((error) => {
@@ -50,6 +51,7 @@ class Login extends Component {
       .createUserWithEmailAndPassword(this.state.email, this.state.password)
       // .then((u) => {})
       .then(() => {
+        console.log('sajnap poszedl')
         return this.props.history.push("/home");
       })
       .catch((error) => {

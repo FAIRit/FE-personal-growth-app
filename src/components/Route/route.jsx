@@ -33,7 +33,7 @@ const Main = (props) => (
     <Route path="/login" component={LoginPage} />
     <Route path="/contact" component={ContactPage} />
     <Route path="/blog" component={BlogPage} />
-    <PrivateRoute authed={props.auth} path="/home" component={Dashboard} />
+    <Route path="/home" component={Dashboard} />
     <Route path="/mygoals" component={GoalsPage} />
   </Switch>
 );
